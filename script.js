@@ -1,7 +1,10 @@
 document.getElementById('yesBtn').addEventListener('click', function() {
   document.getElementById('response').innerText = "I knew you'd say yes 🤣 We going out tomorrow 🎉🍾 I love you! 💜💜💜";
-  // Create confetti
   createConfetti();
+});
+
+document.getElementById('noBtn').addEventListener('click', function() {
+  document.getElementById('response').innerText = "Oh no sike! that's not an option. try again! 🤣";
 });
 
 function createConfetti() {
@@ -16,7 +19,3 @@ function createConfetti() {
     confetti.remove();
   }, 3000);
 }
-
-document.getElementById('noBtn').addEventListener('click', function() {
-  document.getElementById('response').innerText = "Oh no, that's not an option. try again! 🤣";
-});
