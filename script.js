@@ -3,5 +3,5 @@ document.getElementById('yesBtn').addEventListener('click', function() {
 });
 
 document.getElementById('noBtn').addEventListener('click', function() {
-  document.getElementById('response').innerText = "Oh, that's not an option. try again! 🤣";
+  document.getElementById('response').innerText = "Oh no, that's not an option. try again! 🤣";
 });
