@@ -27,3 +27,20 @@ button {
 button:hover {
   background-color: #a5124a;
 }
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: #f7d51d;
+  border-radius: 50%;
+  z-index: 1000;
+  animation: confetti-fall linear infinite;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100vh) rotateZ(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotateZ(360deg);
+  }
